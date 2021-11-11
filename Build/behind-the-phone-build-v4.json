@@ -1,0 +1,16 @@
+{
+"companyName": "Clay",
+"productName": "Behind The Phone",
+"productVersion": "1.0.0",
+"dataUrl": "behind-the-phone-build-v4.data.unityweb",
+"wasmCodeUrl": "behind-the-phone-build-v4.wasm.code.unityweb",
+"wasmFrameworkUrl": "behind-the-phone-build-v4.wasm.framework.unityweb",
+"graphicsAPI": ["WebGL 2.0","WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#000000",
+"cacheControl": {"default": "must-revalidate"},
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.4.28f1"
+}
