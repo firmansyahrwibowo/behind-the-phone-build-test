@@ -13,7 +13,7 @@
     <script>
       UnityLoader.instantiate(
         "unityContainer",
-        "Build/behind-the-phone-build-v4.json"
+        "Build/behind-the-phone-build-v6.json"
       );
     </script>
   </head>
@@ -36,9 +36,23 @@
       }, 1000);
 
       function SendFunction(arg) {
-        console.log(arg);
-        // show the message
-        // alert(arg);
+        // let message = {
+        //   type: "FINISH_COURSE",
+        //   data: { courseFinished: true, score: 5 },
+        // };
+        // console.log("game is finished");
+        // window.postMessage(message, "*");
+        var data = {
+          type: "FINISH_COURSE",
+          data: {
+            courseFinished: true,
+            score: 300,
+            maxScore: 300,
+          },
+        };
+        parent.postMessage(JSON.stringify(data), "*");
+
+        alert(arg);
       }
     </script>
   </body>
